@@ -1,0 +1,6 @@
+.vscode/
+LOGIN_DETAILS.txt
+backend/db.local.php
+backend/config.php
+debug.log
+LoopVideo.mp4

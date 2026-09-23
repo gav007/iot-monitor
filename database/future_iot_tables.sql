@@ -1,0 +1,16 @@
+-- FUTURE IOT DATABASE IDEAS - COMMENTS ONLY
+--
+-- This file deliberately creates no tables.
+-- Agree the hardware messages and data requirements before writing the schema.
+--
+-- Possible future table: devices
+-- Could identify each ESP32/Raspberry Pi and store a friendly name and last-seen time.
+--
+-- Possible future table: sensors
+-- Could describe which sensor is attached to which device and its measurement unit.
+--
+-- Possible future table: sensor_readings
+-- Could store a sensor ID, measured value, and timestamp.
+--
+-- Keep this simple when implementation begins. Do not add tables until the team
+-- knows what real data the ESP32 sends.
