@@ -1,29 +1,23 @@
-/* Small shared interface behaviours. No sensor or device logic belongs here yet. */
-(function () {
-  const themeKey = "iot-monitor-theme";
-  const body = document.body;
-  const toggle = document.querySelector("[data-theme-toggle]");
+function myFunction() {
+  let element = document.body;
+  element.classList.toggle("dark-theme");
 
-  if (localStorage.getItem(themeKey) === "dark") {
-    body.classList.add("dark-theme");
-  }
+  let logo = document.getElementById("hero-logo");
 
-  if (toggle) {
-    toggle.addEventListener("click", function () {
-      body.classList.toggle("dark-theme");
-      localStorage.setItem(
-        themeKey,
-        body.classList.contains("dark-theme") ? "dark" : "light"
-      );
-    });
+  if (logo != null) {
+    if (element.classList.contains("dark-theme")) {
+      logo.src = "../assets/inverted_new2.pgn.png";
+    } else {
+      logo.src = "../assets/loop.png";
+    }
   }
-})();
+}
 
 function validatePassword() {
-  const password = document.getElementById("password").value;
-  const confirmation = document.getElementById("confirm_password").value;
+  let password = document.getElementById("password").value;
+  let confirmPassword = document.getElementById("confirm_password").value;
 
-  if (password !== confirmation) {
+  if (password != confirmPassword) {
     alert("Passwords do not match");
     return false;
   }
