@@ -1,14 +1,8 @@
 <?php
-/*
- * Local database settings example.
- * 1. Copy this file to config.php.
- * 2. Replace the example values with your local MySQL details.
- * 3. Never commit config.php.
- */
-return [
-    "host" => "127.0.0.1",
-    "username" => "your_mysql_username",
-    "password" => "your_mysql_password",
-    "database" => "iot_monitor",
-    "port" => 3306,
-];
+// Copy this file and rename the copy to config.php.
+// Then enter the MySQL details for your own computer.
+$servername = "127.0.0.1";
+$db_username = "your_mysql_username";
+$db_password = "your_mysql_password";
+$dbname = "iot_monitor";
+?>
